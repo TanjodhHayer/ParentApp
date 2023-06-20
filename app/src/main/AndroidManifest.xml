@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ca.cmpt276.parentapp">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ParentApp">
+        <activity
+            android:name=".UI.TakeBreath.TakeBreathActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.WhoseTurn.TaskHistoryActivity"
+            android:exported="false"
+            android:parentActivityName=".UI.WhoseTurn.TaskHistoryActivity" />
+        <activity
+            android:name=".UI.FlipCoin.FlipHistory"
+            android:exported="false"
+            android:parentActivityName=".UI.FlipCoin.FlipCoinActivity" />
+        <activity
+            android:name=".UI.WhoseTurn.EditTask"
+            android:exported="false"
+            android:parentActivityName=".UI.WhoseTurn.WhoseTurnActivity" />
+        <activity
+            android:name=".UI.WhoseTurn.AddTask"
+            android:exported="false"
+            android:parentActivityName=".UI.WhoseTurn.WhoseTurnActivity" />
+        <activity
+            android:name=".UI.WhoseTurn.WhoseTurnActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UI.FlipCoin.FlipCoinActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UI.TimeoutTimer.TimeoutTimerActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UI.ConfigChild.EditChildActivity"
+            android:exported="false"
+            android:parentActivityName=".UI.ConfigChild.ConfigureChildActivity" />
+        <activity
+            android:name=".UI.ConfigChild.AddChildActivity"
+            android:exported="false"
+            android:parentActivityName=".UI.ConfigChild.ConfigureChildActivity" />
+        <activity
+            android:name=".UI.ConfigChild.ConfigureChildActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UI.Help.HelpActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".UI.Notification.NotificationIntentService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver android:name=".UI.Notification.NotificationReceiver" />
+        <receiver
+            android:name=".UI.Notification.NotificationServiceStarterReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

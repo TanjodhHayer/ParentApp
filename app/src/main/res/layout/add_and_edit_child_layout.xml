@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:backgroundTint="#505050"
+    android:backgroundTintMode="multiply">
+
+    <Button
+        android:id="@+id/addChildToListBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_button"
+        android:text="Add Child"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addImgBtn" />
+
+    <Button
+        android:id="@+id/addImgBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/round_button"
+        android:text="add picture"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChildNameEditText" />
+
+    <Button
+        android:id="@+id/takePictureBtn"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_button"
+        android:text="Take Picture"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChildNameEditText" />
+
+    <EditText
+        android:id="@+id/ChildNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="297dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Child's Name"
+        android:inputType="date|textUri|textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:backgroundTint="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/ChildImageImageView"
+        android:layout_width="247dp"
+        android:layout_height="245dp"
+        app:layout_constraintBottom_toTopOf="@+id/ChildNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611"
+        app:srcCompat="@drawable/childimg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

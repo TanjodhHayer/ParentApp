@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">ParentApp</string>
+    <string name="configure_child">Configure Child</string>
+    <string name="flip_coin">Flip Coin</string>
+    <string name="timeout_timer">Timeout Timer</string>
+    <string name="whose_turn">Whose Turn</string>
+    <string name="no_child">No Child</string>
+    <string name="edit_child_btn">Edit Child</string>
+    <string name="deleteBtn">deleteBtn</string>
+    <string name="Pause">Pause</string>
+    <string name="Start">Start</string>
+    <string name="Authors_text">The application Parent App was created in Fall of 2021, by 4 students attending Simon Fraser University,
+        Stephen Leung, Kia Jalali, Ricky Kwong and Tanjodh Hayer. They teamed up to work on </string>
+    <string name="Team_name">Team Chromium:</string>
+    <string name="link"><a href="https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt276/home">CMPT276\'s</a></string>
+    <string name="Main_Background"><a href="https://w0.peakpx.com/wallpaper/498/169/HD-wallpaper-animals-pattern-colorful-vector.jpg">Main Background</a></string>
+    <string name="Help">Help</string>
+    <string name="Authors_text2">final project.</string>
+    <string name="Copyright_title">Copyrights:</string>
+    <string name="add_child">Add Child</string>
+    <string name="add_task">Add Task</string>
+    <string name="no_task">No Task</string>
+    <string name="Edit_Task">Edit Task</string>
+    <string name="helpBtn">helpBtn</string>
+    <string name="no_history">No History</string>
+    <string name="task_history">Task History</string>
+    <string name="speedTitle">speed</string>
+    <string name="reset">reset</string>
+    <string name="custom_time">Custom Time</string>
+    <string name="_3">3</string>
+    <string name="_2">2</string>
+    <string name="_4">4</string>
+    <string name="_1">1</string>
+    <string name="_5">5</string>
+    <string name="_00_00">00:00</string>
+    <string name="set_time">Set Time</string>
+    <string name="start">Start</string>
+    <string name="choose_time">Choose Time:</string>
+    <string name="take_breath">Take Breath</string>
+    <string name="NumOfBreathTextView">Number of Breaths: </string>
+    <string-array name="breathNums">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

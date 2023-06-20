@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/twenty"
+        android:title="25%"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/fifty"
+        android:title="50%"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/seventyFive"
+        android:title="75%"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/Hondos"
+        android:title="100%"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/doubleSpeed"
+        android:title="200%"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/tripleDaSpeed"
+        android:title="300%"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/quadroSpeed"
+        android:title="400%"
+        app:showAsAction="never"/>
+</menu>

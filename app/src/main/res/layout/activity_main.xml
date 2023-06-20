@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:backgroundTint="#505050"
+    android:backgroundTintMode="multiply"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="142dp">
+
+
+    <Button
+        android:id="@+id/FlipBtn"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round_button"
+        android:text="@string/flip_coin"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/ConfigChildBtn"
+        app:layout_constraintEnd_toEndOf="@+id/ConfigChildBtn"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/ConfigChildBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/BreathBtnMainMenu"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round_button"
+        android:text="@string/take_breath"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/FlipBtn"
+        app:layout_constraintEnd_toEndOf="@+id/FlipBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/FlipBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/WhoseTurnBtn"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/round_button"
+        android:text="@string/whose_turn"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/TimeoutBtn"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round_button"
+        android:text="@string/timeout_timer"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/WhoseTurnBtn"
+        app:layout_constraintEnd_toEndOf="@+id/WhoseTurnBtn"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/WhoseTurnBtn"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/ConfigChildBtn"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round_button"
+        android:text="@string/configure_child"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/TimeoutBtn"
+        app:layout_constraintEnd_toEndOf="@+id/TimeoutBtn"
+        app:layout_constraintStart_toStartOf="@+id/TimeoutBtn"
+        tools:ignore="TouchTargetSizeCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

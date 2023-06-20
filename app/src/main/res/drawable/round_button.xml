@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- https://www.youtube.com/watch?v=IoUMj7Fhf2M&ab_channel=AnggaRisky -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="24dp"/>
+    <gradient
+        android:startColor="#6180DE"
+        android:endColor="#3740C3"
+        android:angle="270"
+        />
+</shape>
